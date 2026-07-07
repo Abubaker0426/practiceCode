@@ -1,0 +1,64 @@
+/* Global Styles */
+.ll, .lta {
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.form-two {
+  width: 1000px;
+  margin: 30px auto;
+  border: none; /* Removed duplicate border declaration */
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+#y-r-login {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 55px;
+}
+
+.p-a {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.but-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Group related selectors */
+}
+
+.but-two button {
+  background-color: rgb(0, 107, 108);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 200px;
+  margin-bottom: 20px;
+}
+
+.but-two button:hover {
+  background-color: rgb(2, 149, 151);
+}
+
+.but-two button a {
+  font-size: larger;
+  color: whitesmoke;
+}

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 53, 255);
+}
+.abu{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 3% auto;
+    background-color: white;
+}
+.btn-box{
+    width: 200px;
+    position: relative;
+    box-shadow: 0 0 20px 9px  #ff61241f;
+    border-radius: 30px;
+}
+#l-s{
+    padding: 12px 15px ;
+    cursor:pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+}
+.log{
+    margin-left: 32px;
+}
+.btn-one{
+    padding-top: 30px;
+    padding-left: 95px;
+}
+.but-bb{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#fff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.login-box{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.form{
+    width: 100%;
+    padding: 12px ;
+    margin: 10px 0;
+    outline: none;
+    background: transparent;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.clkbtn{
+    width: 100%;
+    padding: 12px 35px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#ff105f,#fff );
+    border: none;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+#id-login{
+left: 50px;
+}
+#signup{
+left: 450px;
+}

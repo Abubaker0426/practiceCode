@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="abu">
+      <div class="btn-one">
+        <div class="btn-box">
+          <div class="but-bb"></div>
+          <button id="l-s" class="log" onclick="login-box()">Login</button>
+          <button id="l-s" class="signup" onclick="signup()">Signup</button>
+        </div>
+      </div>
+      <div id="id-login" class="login">
+        <div class="login-box">
+          <input
+            type="email"
+            class="form"
+            placeholder="EnteryourEmail@gmail.com"
+            required
+          />
+          <input
+            type="password"
+            class="form"
+            placeholder="Enter Your Password"
+            required
+          />
+          <button class="clkbtn"><a href=" ">Login</a></button>
+        </div>
+        <div id="signup" class="signup-box">
+          <input
+            type="text"
+            class="form"
+            placeholder="Enter Your name"
+            required
+          />
+          <input
+            type="email"
+            class="form"
+            placeholder="EnteryourEmail@gmail.com"
+            required
+          />
+          <input
+            type="password"
+            class="form"
+            placeholder="Enter Your Password"
+            required
+          />
+          <input
+            type="password"
+            class="form"
+            placeholder="Enter Your Confirm password"
+            required
+          />
+          <button class="clkbtn"><a href="#">Signup</a></button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let x = document.getElementById("id-login");
+      let y = document.getElementById("signup");
+      let z = document.getElementById("but-bb");
+      function signup() {
+        x.style.left = "-400px";
+        y.style.left = "500px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <div class="height">
+         <div class="but1"> 
+          <button>Login</button>
+          <button>signup</button>
+        </div>
+      <div class="in-input">
+       
+        <div class="input">
+          <input type="email" placeholder="youremail@email.com" class="email" />
+          <input type="password" placeholder="password" class="pas" />
+        </div>
+          <div class="but2">
+            <button>Login</button>
+          </div>
+           <input type="button" value="Login" /> 
+       
+      </div>
+    </div> -->
+<div class="">
+  
+</div>

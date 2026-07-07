@@ -1,0 +1,12 @@
+.abu{
+    font-size:100px ;
+    color: blue;
+    
+}
+.d-block{
+    height: 500px !important;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
