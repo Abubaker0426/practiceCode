@@ -1,0 +1,231 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}.hi {
+  width: 300px;
+  height: 300px;
+  border: 9px solid palevioletred;
+  margin: 0 auto;
+}
+
+.dropdown {
+    width: 100px;
+    background-color: aqua;
+  position: relative;
+  cursor: pointer;
+}
+.dropdown-content {
+    width: 100%;
+    max-width: 200px;
+  display: none;
+  position: absolute;
+ 
+
+ top: 50px;
+
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* 
+.gridNav {
+  height: 70px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: auto 350px 170px 1fr  minmax();
+  align-items: center;
+  column-gap: 20px;
+
+}
+.gridNav p:nth-child(1){
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.gridNav a {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.gridNav div{
+  display: grid;
+  grid-template-columns:  auto auto auto auto auto ;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.gridNav input[type="search"] {
+  height: 40px; 
+  border-radius: 10px;
+  padding-left: 20px;
+ 
+}
+
+.gridNav input[type="button"] {
+   height: 40px; 
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    &:hover{
+      background-color: blue;
+    }
+}
+
+ */
+/* .triangal{
+  width: 200px;
+  height: 200px;
+  border-top:none ;
+  border-bottom: 100px  solid blue;
+  border-right: 100px solid yellow  ;
+  border-left:100px  solid green;
+} */
+.triangal {
+  margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 106px solid blue; /* Triangle color */
+}
+.triangle-clip-path {
+  margin: 0 auto;
+  
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.triangle-transform {
+  margin: 50px auto;
+
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+.triangle-pseudo {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.triangle-pseudo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}
+.triangle-gradient {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, transparent 50%, blue 50%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  resize: both;
+  overflow:auto;
+
+  /* good property  */
+}
+body{
+  background: #d3d0d0;
+}
+.box-shadow{
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  /* &:hover{
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1),-3px -3px 10px rgb(179, 178, 178);
+  } */
+  &:hover{
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1) inset, 0px 0px 10px #cfc8cf52 inset;
+  }
+
+}
+/* .element{
+    width: 100px;
+  height: 30px;
+  margin: 50px auto;
+  background-color: blue;
+}
+.sub-ele{
+  width: 50px;
+  height: 50px;
+  background-color: yellowgreen;
+  display: none;
+
+}
+.element:checked .sub-ele{
+  display: block;
+} */
+
+/* ----ONE METHOD OF CSS CLICKON  */
+  .element {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  .CHEC{
+    display: flex;
+    justify-content: center;
+  }
+  .sub-ele {
+    width: 500px;
+    height: 50px;
+    background-color: yellowgreen;
+    display: none;
+ 
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + .element + .sub-ele {
+    display: block;
+  }
+  /* ----END METHOD OF CSS CLICKON  */
+
+  
+
+  
+.res{
+  margin: 0 auto;
+  background-color: blue;
+/* margin: 20px; */
+  /* width: max(800px,90%); */     /* to  give minemum width */
+  width: min(800px,90%);
+  /* font-size: min(5px,50px); */
+  /* width: clamp(200px, 400px, 600px); */
+
+}
+.button >button{
+  /* color: antiquewhite; */
+  padding: 12px 20px;
+  border: none;
+}
+.button >button:not(:first-child){
+  background-color: burlywood;
+
+
+}
+.button >button:not(:nth-child(4)){
+padding: 20px 40px;
+}
